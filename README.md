@@ -1,4 +1,4 @@
-Gesture Controlled Media Player System
+## Gesture Controlled Media Player System
 
 This project implements a gesture-based media control system using computer vision.
 Hand gestures captured through a webcam are used to control media functions such as
@@ -7,20 +7,20 @@ play, pause, volume up, volume down, and mute.
 The system uses real-time hand landmark detection to count fingers and map each gesture
 to a specific media action.
 
-Technologies Used
+# Technologies Used
 Python
 OpenCV
 MediaPipe
 PyAutoGUI
 
-How It Works
+# How It Works
 The webcam captures live video frames.
 MediaPipe detects hand landmarks from the video stream.
 Finger counting logic identifies the number of raised fingers.
 Each gesture is mapped to a media control action.
 PyAutoGUI triggers system media keys based on the detected gesture.
 
-Machine Learning Aspect
+# Machine Learning Aspect
 
 This project leverages MediaPipe Hands, which is a machine learning based framework
 trained on large-scale hand pose datasets. The model performs real-time hand detection
@@ -32,13 +32,13 @@ gesture classification, the same features can be used to train supervised machin
 learning models for gesture recognition.
 
 
-Gesture Mapping
+# Gesture Mapping
 0 Fingers - Mute
 1 Finger  - Volume Up
 2 Fingers - Volume Down
 5 Fingers - Play or Pause
 
-Screenshots
+# Screenshots
 
 ![Webcam Hand Detection](screenshots/webcam_detection.png)
 
@@ -52,13 +52,13 @@ Screenshots
 
 ![Media Control Action4](screenshots/volume_alter(down).png)
 
-How to Run
+# How to Run
 Create a virtual environment.
 Install dependencies using requirements.txt.
 Run the main.py file.
 Show hand gestures in front of the webcam.
 
-Future Improvements
+# Future Improvements
 
 The current version of the project uses rule-based gesture mapping for media control.
 Several enhancements can be implemented to improve accuracy and usability.
